@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic ME | Gardening Course</title>
+    <link rel="icon" type="img/logo5555.png" href="img/logo5555.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+
+        <nav class = "navbar">
+            <div class ="logo"><a href="index.html"><img src="img/logo5555.png" alt="logo"></a></div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about-us.html">About us</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="cafe.html">Cafe</a>
+                    <a class="active" href="gardening-course.html">Gardening course</a>
+                    <a class= "ctn" href="contact-us.html">Contact Us</a>
+                </div>
+            <img src="img/menu-btn.png" alt="" class="menu-btn">
+
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/highland-cow.png" alt="cow" style="width:100%">
+                
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/garden-house.png" alt="garden house" style="width:100%">
+            
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/rainbow.png" alt="rainbow" style="width:100%">
+            
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </div>
+            <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+    </div>
+
+
+                <div class="gardening2">
+                    <h5>Our incredible gardening course</h5>
+                    <p>
+                        This gardening course is suitable for both those who are new to gardening and those who have some prior knowledge or experience. It is open to a wide range of students, including gardeners, tree surgeons, landscape gardeners, labourers, builders, and DIY enthusiasts. The course covers all aspects of gardening and is designed to be an enjoyable and rewarding learning experience. No prior experience is required to enroll and the step-by-step approach makes it easy for anyone to understand and apply the gardening techniques taught in the course, from basic to advanced level.
+                    </p>
+            
+                </div>
+
+                <div class="gardening">
+                    <div class="row">
+                         <div class="col content-col">
+
+                                <h1>More about gardening courses</h1>
+                                <p>Upon completing this home learning program, students will have a solid grasp of the fundamental concepts within this subject. They will have developed a broad understanding of the subject matter and will be able to summarize key topics. They will also have the necessary foundation to continue learning and advancing in this field, equipped with a range of theoretical skills and insights to aid them in achieving their short and long-term goals.</p>
+                                <a href="#" class="ctn">Learn more</a>
+                        </div>
+
+                        <div class="col image-col">
+                            <div class="image-gallery">
+                                    
+                                <img src="img/flowers.jpg" alt="flowers">
+                                <img src= "img/garden.jpg" alt="garden">
+                                <img src="img/garden2.jpg" alt="garden2">
+                                <img src= "img/nature1.jpg" alt="nature">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            
+
+                <form action="/action_page.php">
+                    <div class="container-news">
+                        <h4>Subscribe to our Newsletter</h4>
+                        <p>If you're interested in getting the latest recipes, news about our gardening course, and more, you can subscribe to our newsletter. </p>
+                    </div>
+                    
+                    <div class="container-news" style="background-color:white">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="text" placeholder="Email address" name="mail" required>
+                        <label>
+                        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                        </label>
+                    </div>
+                    
+                    <div class="container-news">
+                        <a href="thank-you.html" class="ctn">Subscribe</a>
+                    </div>
+                </form>
+
+            
+
+
+                <section class="footer">
+
+                    <div class ="logo"><a href="index.html"><img src="img/logo5555.png" alt="logo"></a></div>
+        
+                
+                    <div class="icons">
+                        <p><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="facebook" width="20">Facebook</a></p>
+        
+                        <p><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="instagram" width="20">Instagram</a></p>
+        
+                        <p><a href="https://www.twitter.com" target="_blank"><img src="img/twitter.png" alt="twitter" width="20">Twitter</a></p>
+                    </div>
+                
+                    
+                    <div>
+                        <p> Organic ME, 1 High Street , Kelso, Scotland |Phone +447446661385 <br> Email: contact@organic-me.uk</p>
+                    </div>
+        
+                    <div>
+                        <p>Copyright &copy  Edita Staskunaite</p>
+                    </div>
+            
+                </section>
+
+
+
+
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+
+                    let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+
+</body>
+</html>
